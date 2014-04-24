@@ -1,0 +1,7 @@
+main_mex.o: main_mex.c /opt/matlab/extern/include/mex.h \
+  /opt/matlab/extern/include/matrix.h \
+  /opt/matlab/extern/include/tmwtypes.h jm.h graphchop.h weight.h
+graphchop.o: graphchop.cc jm.h /opt/matlab/extern/include/mex.h \
+  /opt/matlab/extern/include/matrix.h \
+  /opt/matlab/extern/include/tmwtypes.h graphchop.h weight.h \
+  GCoptimization.h energy.h graph.h block.h
